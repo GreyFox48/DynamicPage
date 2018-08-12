@@ -1,0 +1,203 @@
+/* Sandy Ludosk y | http://sandyludosky.github.io 
+   === Learn to Code sleek websites (easy & fun) ===
+   v1.0 | 20140912
+   License: none (public domain)
+*/
+
+
+  body {      
+    color: #444444;
+  }
+
+ h1, h2, h3 {
+  font-weight: 600;
+  }
+  
+  h1 {
+  font-size: 58px;
+  margin:0;
+  }
+
+  h2 {
+  font-size: 46px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+  line-height: 1.4;
+  font-size: 15px;
+  }
+
+  .logo {
+  margin: 0 auto;
+  }
+
+  /*Header - navigation*/
+  nav #menu {
+  list-style-type: none;
+  margin: 0;
+  }
+
+    nav #menu li {
+    display: inline-block;
+
+    }
+      nav #menu li:hover {
+      /* top: 5px;*/
+      }
+
+    nav #menu a {
+    }
+      nav #menu li:hover a {
+     
+      }
+
+  /*General background for all sections*/
+  section.box {
+    padding: 50px 40px;
+  }
+    section.box h2, section.box h3 {
+    
+    }
+
+/*Header - banner section*/
+  section#banner {
+  padding-top: 110px;
+  padding-bottom: 100px;
+
+  }
+    section#banner p {
+
+    }
+    section#banner h1 {
+    
+    }
+  
+
+  /*About section */
+  section#about {
+
+  }
+    section#about div {
+
+    }
+
+    section#about p {
+    }
+
+    section#about h2 {
+    }
+     
+      section#about h2:nth-of-type(1) {
+
+      }
+
+      section#about h2:nth-of-type(2) {
+=
+      }
+
+
+  img#globe {
+
+  }
+
+  img#island {
+
+  }
+  
+/*destinations section*/
+  #destinations {
+
+  }
+
+    #destinations h3 {
+
+    }
+
+    section#destinations div {
+ 
+    }
+    section#destinations img { 
+
+    }
+
+  /*Other hover effect*/
+  section#destinations img:hover {
+ 
+  }
+
+/*Display section*/
+div#display {
+
+}
+
+
+/*Contact section*/
+  section#contact li {
+      
+  }
+    section#contact a {
+   
+    }
+      section#contact li:hover a {
+
+      }
+
+/*Social media icons - COLORS  */
+
+  a.fb {
+   background: url(../images/social_media.png) -256px top;
+  }
+   /* section#contact li:hover a.fb {
+    background: url(../images/social_media.png) -256px bottom;
+    }
+*/
+  a.twitter {
+   background: url(../images/social_media.png) -512px top;
+  }
+   
+  a.youtube {
+   background: url(../images/social_media.png) -640px top;
+  }
+   
+
+  a.googleplus {
+   background: url(../images/social_media.png) -768px top;
+  }
+    
+
+  footer {
+
+  }
+    footer p  {
+  
+    }
+
+    footer .right {
+    
+    }
+
+  span.heart{
+   }
+
+.margin {
+  margin: 20px 0;
+}
+.clearfix {
+clear: both;
+}
+
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* Styles */
+
+}
+
+ /* Iphone/Android (Small Devices) ----------- */
+ @media only screen and (min-width : 320px) and (max-width: 767px) {
+/* Styles */ 
+
+}
