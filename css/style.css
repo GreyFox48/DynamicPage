@@ -55,7 +55,7 @@
     nav #menu li {
     display: inline-block;
     padding: 20px 35px;
-    
+    width: 14rem;
     }
       nav #menu li:hover {
       /* top: 5px;*/
@@ -256,11 +256,38 @@ clear: both;
 /* iPads (Tablets) ----------- */
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* Styles */
-
+  nav #menu li {
+    display: inline-block;
+    padding: 20px 35px;
+    width: 11rem;
+    }
 }
 
  /* Iphone/Android (Small Devices) ----------- */
- @media only screen and (min-width : 320px) and (max-width: 767px) {
+ @media only screen and (min-width : 320px) and (max-width: 768px) {
 /* Styles */ 
+  section#banner {
+    padding-top: 270px;
+    background-size: auto auto;
+    padding-bottom: 50px;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+    margin-top: 20px;
+
+  }
+
+  h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  section#about h2:nth-of-type(1), section#about h2:nth-of-type(2) {
+    text-align: center;
+  } 
+.hidden_sm {
+  display: none;
+}
 
 }
