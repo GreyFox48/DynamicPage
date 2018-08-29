@@ -62,6 +62,7 @@
       }
 
     nav #menu a {
+      width: 15rem;
       text-decoration: none;
       color: #3498db;
       font-weight: bold;
@@ -91,7 +92,7 @@
   padding-bottom: 100px;
   background: url(http://placeimg.com/1300/680/arch);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   }
     section#banner p {
       font-size: 22px;
@@ -132,16 +133,14 @@
 
   img#globe {
     float: left;
-    width: 200px;
-    height: 200px;
+    height: 300px;
     padding: 70px 0 0 0;
     margin-right: 10px;
   }
 
   img#island {
     float: right;
-    width: 200px;
-    height: 200px;
+    height: 300px;
     padding: 90px 0 0 0;
     margin-left: 10px;
   }
@@ -208,10 +207,12 @@ div#display {
   a.fb {
    background: url(../images/social_media.png) -55px top;
   }
-   /* section#contact li:hover a.fb {
-    background: url(../images/social_media.png) -256px bottom;
+  
+  /* improper sprite sheet to achieve this
+  section#contact li:hover a.fb {
+    background: url(../images/social_media.png) -55px top;
     }
-*/
+  */
   a.twitter {
    background: url(../images/social_media.png) -335px top;
   }
@@ -253,6 +254,10 @@ div#display {
 clear: both;
 }
 
+.visible_mobile {
+  display: none;
+}
+
 /* iPads (Tablets) ----------- */
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* Styles */
@@ -261,6 +266,10 @@ clear: both;
     padding: 20px 35px;
     width: 11rem;
     }
+
+  .visible_mobile {
+    display: none;
+  }
 }
 
  /* Iphone/Android (Small Devices) ----------- */
@@ -286,8 +295,58 @@ clear: both;
   section#about h2:nth-of-type(1), section#about h2:nth-of-type(2) {
     text-align: center;
   } 
-.hidden_sm {
-  display: none;
-}
 
+  section#about h2 {
+    padding-bottom: 5px;
+  } 
+
+  section#about div {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .hidden_sm {
+    display: none;
+  }
+
+  .visible_mobile {
+    display: block;
+  }
+
+  section#contact li {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  section#contact a {
+      height: 28px;
+      display: inline-block;      
+    }
+
+  footer p {
+    float: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .right {
+    float: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav #menu li {
+    display: inline-block;
+    padding: 10px 35px;
+    width: 14rem;
+    font-size: 12px;
+    }
+
+    #destinations {
+    border-top: 1px solid #f39c12;
+    border-bottom: 1px solid #f39c12;    
+    background: url(../images/citiesskyline.png);
+    background-size: contain,cover;
+    background-repeat: no-repeat;
+  }
 }

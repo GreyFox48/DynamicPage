@@ -1,4 +1,5 @@
 <!doctype html> 
+<meta charset="utf-8"/>
 <html>
 <head>
   <title>Bon Voyage | Project</title>
@@ -10,19 +11,17 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   
   
-  <!-- CSS3 Animate 
+  <!-- CSS3 Animate -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-   -->
+   
+  <!-- Navigation | Hover Effect: http://tympanus.net/Development/CreativeLinkEffects/ -->
 
-  <!-- Navigation | Hover Effect: http://tympanus.net/Development/CreativeLinkEffects/ 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/component.css">
   <link rel="stylesheet" type="text/css" href="css/demo.css">
-  -->
-
-  <!-- Image | Hover Effect :http://recipes.joomla-monster.com/animated-hover-effects-for-images/#.VARysGRdUoY 
+  
+  <!-- Image | Hover Effect :http://recipes.joomla-monster.com/animated-hover-effects-for-images/#.VARysGRdUoY   --> 
   <link rel="stylesheet" type="text/css" href="css/hover_effect.css">
-  -->
 
   <!-- Favicon
   <link rel="shortcut icon" href="https://placeimg.com/16/16/arch" >
@@ -38,19 +37,19 @@
 
 <header>
 <!-- Navigation -->
-  <nav>
+  <nav class="cl-effect-5 quicksand" id="cl-effect-5">
     <ul id="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">Our Story</a></li>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#"><span data-hover="Home">Home</span></a></li>
+      <li><a href="#about"><span data-hover="Our Story">Our Story</span></a></li>
+      <li><a href="#destinations"><span data-hover="Destinations">Destinations</span></a></li>
+      <li><a href="#contact"><span data-hover="Contact Us">Contact Us</span></a></li>
     </ul>
   </nav>
 
     <!-- Banner section -->
     <section id='banner' class="box">
 
-      <div>      
+      <div class="animated bounceInDown">      
         <span class='logo'><i class="fas fa-globe-americas fa-5x"></i></span>
         <h1>Bon Voyage <br><em>Travel the World</em></h1>
         <p>Your tagline here</p>       
@@ -67,7 +66,6 @@
       <h2>About Bon Voyage</h2>  
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. </p>
 
-      <div class="clearfix"></div>
       <br>
 
       <img id="island" class="hidden_sm" src="images/island.png">
@@ -83,21 +81,58 @@
  <h2>Our destinations</h2>
     <h3>Travel with Us...</h3>
 
-  <div class="thumb">
-    <img src="http://placeimg.com/250/170/arch/1">
-  </div>
+  <div class="jm-mainpage-box">
 
-  <div class="thumb">     
-  <img src="http://placeimg.com/250/170/arch/2">
-    </div>
+            <!-- thumbnail -->
+             <div class="jm-item first">
+              <div class="jm-item-wrapper">
+                <div class="jm-item-image">
+                    <img src="http://lorempixel.com/245/170/city/4/" alt="Travel Destination" />
+                  <span class="jm-item-overlay"> </span>
+                  <div class="jm-item-button"><a href="#">View</a></div>
+                </div>  
+                <div class="jm-item-title">New York, USA</div>
+              </div>
+            </div>
+    
 
-  <div class="thumb">
-    <img src="http://placeimg.com/250/170/arch/3">
-  </div>
+            <!-- thumbnail -->
+            <div class="jm-item first">
+              <div class="jm-item-wrapper">
+                <div class="jm-item-image">
+                    <img src="http://lorempixel.com/245/170/city/2/" alt="Travel Destination" />
+                  <span class="jm-item-overlay"> </span>
+                  <div class="jm-item-button"><a href="#">View</a></div>
+                </div>  
+                <div class="jm-item-title">Vegas, USA</div>
+              </div>
+            </div>     
 
-  <div class="thumb">
-    <img src="http://placeimg.com/250/170/arch/4">
-  </div>
+            <!-- thumbnail -->
+            <div class="jm-item first">
+              <div class="jm-item-wrapper">
+                <div class="jm-item-image">
+                    <img src="http://lorempixel.com/245/170/city/9/" alt="Travel Destination" />
+                  <span class="jm-item-overlay"> </span>
+                  <div class="jm-item-button"><a href="#">View</a></div>
+                </div>  
+                <div class="jm-item-title">SF, USA</div>
+              </div>
+            </div>    
+
+            <!-- thumbnail -->
+            <div class="jm-item first">
+              <div class="jm-item-wrapper">
+                <div class="jm-item-image">
+                    <img src="http://lorempixel.com/245/170/city/7/" alt="Travel Destination" />
+                  <span class="jm-item-overlay"> </span>
+                  <div class="jm-item-button"><a href="#">View</a></div>
+                </div>  
+                <div class="jm-item-title">Sidney, Australia</div>
+              </div>
+            </div>   
+
+      </div><!--End thumbnails -->
 
     <br>
 
@@ -107,7 +142,7 @@
 
 
   <!-- Section for display only - no content-->
-  <div id='display' class="box">
+  <div id='display' class="box hidden_sm">
 
 
   </div>
@@ -117,16 +152,18 @@
   <section id="contact" class="box">
      <h2>Contact Us</h2><br>
      <h3>Travel with Us</h3>
-    <ul>
+    <ul class="hidden_sm">
       <li><a class="twitter" href="https://twitter.com/"></a></li>
       <li><a class="googleplus" href="https://plus.google.com/"></a></li>
       <li><a class="fb" href="https://facebook.com/"></a></li>  
-      <li><a class="youtube" href="https://youtube.com/"></a></li>
-      
-      <!--  *** more social icons ***
-      <li><a class='github' href="https://twitter.com/"></a></li>
-      <li><a class='linkedin' href="https://linkedin.com/"></a></li>
-      <li><a class='wordpress' href="https://twitter.com/"></a></li> -->
+      <li><a class="youtube" href="https://youtube.com/"></a></li>      
+    </ul>  
+
+    <ul class="visible_mobile">
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://plus.google.com/">Google+</a></li>
+      <li><a href="https://facebook.com/">Facebook</a></li>  
+      <li><a href="https://youtube.com/">Youtube</a></li>      
     </ul>   
   </section>
 
